@@ -31,3 +31,7 @@ java {
         languageVersion = JavaLanguageVersion.of(25)
     }
 }
+
+publishToMavenLocal {
+    dependsOn("jar")
+}
