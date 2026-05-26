@@ -26,10 +26,8 @@ test {
     useJUnitPlatform()
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
